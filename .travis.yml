@@ -1,6 +1,5 @@
-os: 
-    - osx
-    - linux
+language: cpp
+os: osx
 before_install: 
     - brew update
     - brew install qt5
