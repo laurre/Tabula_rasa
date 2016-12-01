@@ -3,6 +3,8 @@ os: osx
 before_install: 
     - brew update
     - brew install qt5
+    # qt5 is keg-only, link it to have qmake available from path
+    - brew link qt5
 script:
     - cd Sources
     - qmake
